@@ -20,6 +20,10 @@ export default function Header() {
       url: "/",
     },
     {
+      name: "Habilidades",
+      url: "/",
+    },
+    {
       name: "Proyectos",
       url: "/",
     },
@@ -30,12 +34,12 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-full flex justify-between items-center sticky top-0 bg-black bg-opacity-50 backdrop-blur text-white px-auto py-7 z-10">
+    <header className="w-full flex justify-between items-center sticky top-0 bg-black bg-opacity-50 backdrop-blur text-white px-10 py-7 z-10">
       <Link
         href="/"
-        className="font-semi-bold text-lg transition hover:transition hover:animate-pulse hover:underline"
+        className="font-semi-bold text-xl md:text-2xl transition hover:transition hover:animate-pulse hover:underline"
       >
-        <h1>juanfel254</h1>
+        <h1>juanfe.site</h1>
       </Link>
 
       <Sheet>
@@ -65,7 +69,7 @@ export default function Header() {
           <Link
             key={index}
             href={section.url}
-            className="transition duration-500 rounded px-2 py-1 hover:box hover:bg-white hover:text-black"
+            className="text-lg transition duration-500 rounded py-2 px-3 hover:box hover:bg-white hover:text-black"
           >
             <li>{section.name}</li>
           </Link>

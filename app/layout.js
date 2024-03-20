@@ -11,9 +11,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
-        className={`${inter.className} bg-black text-white -mt-20 px-7 md:px-10`}
+        className={`${inter.className} flex justify-between flex-col bg-black text-white bg-flow-2`}
       >
         <Header />
         {children}

@@ -81,3 +81,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .bg-flow {
+    background-image: url("/backgrounds/flow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .bg-flow-2 {
+    background-image: url("/backgrounds/flow2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

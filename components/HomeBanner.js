@@ -1,13 +1,29 @@
+import Image from "next/image";
+
 export default function HomeBanner() {
   return (
-    <section className="flex flex-col w-full h-screen items-center justify-center text-center gap-3">
-      <h1 className="font-bold text-5xl lg:text-6xl">
-        Juan Felipe Parra Runceria
+    <section className="-my-60 md:-my-36 flex flex-col w-full h-screen items-center justify-center text-center gap-7">
+      <h1 className="font-extrabold text-5xl lg:text-8xl">
+        Juan <span className="text-sky-400">Felipe Parra</span> Runceria
       </h1>
-      <p className="w-2/3">
-        Desarrollador Web Frontend, Emprendedor, Futuro Ingeniero Mecánico y
-        Representante Estudiantil en la UNAL.
-      </p>
+      <div className="flex gap-3 items-center">
+        <h2 className="text-lg md:text-3xl">
+          Representante Estudiantil de la Facultad de Ingeniería
+        </h2>
+        <h2 className="font-black text-lg md:text-4xl">UNAL</h2>
+      </div>
+      <div className="flex gap-4 items-center">
+        <Image
+          width={100}
+          height={100}
+          src="/icons/tigui.svg"
+          alt="Tigüi S.A.S"
+          className="-mb-1"
+        />
+        <h2 className="text-lg md:text-3xl">
+          Software CTO & Desarrollador Web
+        </h2>
+      </div>
     </section>
   );
 }

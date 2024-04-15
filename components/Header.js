@@ -37,7 +37,7 @@ export default function Header() {
     <header className="w-full flex justify-between items-center sticky top-0 bg-black bg-opacity-50 backdrop-blur text-white px-10 py-7 z-10">
       <Link
         href="/"
-        className="font-semi-bold text-xl md:text-2xl transition hover:transition hover:animate-pulse hover:underline"
+        className="font-semi-bold text-xl md:text-base transition hover:transition hover:animate-pulse hover:underline"
       >
         <h1>juanfe.site</h1>
       </Link>
@@ -50,7 +50,7 @@ export default function Header() {
               <Link
                 key={index}
                 href="#footer"
-                className="transition duration-500 rounded px-2 py-3 underline text-2xl hover:box hover:bg-white hover:text-black"
+                className="transition duration-500 rounded px-2 py-3 underline text-xl hover:box hover:bg-white hover:text-black"
               >
                 <SheetClose>
                   <li>{section.name}</li>
@@ -69,7 +69,7 @@ export default function Header() {
           <Link
             key={index}
             href={section.url}
-            className="text-lg transition duration-500 rounded py-2 px-3 hover:box hover:bg-white hover:text-black"
+            className="text-base transition duration-500 rounded py-2 px-3 hover:box hover:bg-white hover:text-black"
           >
             <li>{section.name}</li>
           </Link>

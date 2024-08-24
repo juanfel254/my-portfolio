@@ -7,5 +7,8 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: 'https://juanfe.vercel.app',
   integrations: [tailwind(), react()],
-  output: 'static',
+  output: 'hybrid',
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
 });

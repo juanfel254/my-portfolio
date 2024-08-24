@@ -1,7 +1,9 @@
 {
   "name": "my-portfolio",
   "type": "module",
-  "version": "0.0.1",
+  "author": "Juan Felipe Parra Runceria",
+  "description": "My personal portfolio as a software engineer and web developer",
+  "version": "0.0.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

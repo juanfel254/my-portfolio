@@ -1,9 +1,10 @@
 ---
+import ParticlesBackground from '@/components/atoms/ParticlesBackground/ParticlesBackground';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro">
-  <section class="flex h-fit w-full flex-col items-center justify-center pt-40">
+  <section class="flex h-fit w-full flex-col items-center justify-center pt-60">
     <h1 class="text-center text-5xl font-bold tracking-tight lg:text-7xl">
       Juan Felipe Parra Runceria<br />
       <span class="text-xl font-semibold italic tracking-normal lg:text-3xl"
@@ -12,4 +13,5 @@ import Layout from '../layouts/Layout.astro';
     </h1>
     <p class="font-medium text-neutral-300">Quality User Experiences</p>
   </section>
+  <ParticlesBackground client:load />
 </Layout>

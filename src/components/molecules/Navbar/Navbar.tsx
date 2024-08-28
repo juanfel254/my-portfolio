@@ -11,7 +11,7 @@ const Navbar: React.FC<NavbarProps> = ({ mainLogo, items }) => {
   return (
     <nav className="mx-auto w-fit flex lg:gap-4 max-w-screen-xl items-center justify-center border-2 p-2 rounded-full bg-neutral-50 shadow-xl">
       <Link href="#" target="_top">
-        <Button variant="ghost">JFPR</Button>
+        <Button variant="ghost" className="border-none ">JFPR</Button>
       </Link>
       <Link href="#about" target="_self">
         <Button variant="ghost">About</Button>
@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ mainLogo, items }) => {
         <Button variant="ghost">Services</Button>
       </Link>
       <Link href="#contact" target="_self">
-        <Button>Contact</Button>
+        <Button variant="primary">Contact</Button>
       </Link>
     </nav>
   );

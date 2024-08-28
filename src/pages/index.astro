@@ -8,17 +8,28 @@ import Typography from '@/components/atoms/Typography/Typography';
   <section
     class="flex h-screen w-full flex-col items-center justify-center text-center"
   >
-    <div>
-      <Typography as="h1" variant="h1" gradient={true} className="mb-3">
+    <div
+      class="absolute right-0 top-0 h-full w-full bg-white blur-3xl lg:bg-transparent lg:blur-none"
+    >
+    </div>
+    <div class="z-10">
+      <Typography
+        as="h1"
+        variant="h1"
+        gradient={true}
+        className="mb-3 text-5xl"
+        client:load
+      >
         Juan Felipe Parra Runceria
       </Typography>
+
+      <h2 class="text-3xl font-semibold italic lg:text-3xl">
+        Frontend Web Software Developer
+      </h2>
+      <p class="text-lg font-medium text-neutral-500">
+        Intuitive User Experiences
+      </p>
     </div>
-    <h2 class="text-3xl font-semibold italic lg:text-3xl">
-      Frontend Web Software Developer
-    </h2>
-    <p class="text-lg font-medium text-neutral-500">
-      Intuitive User Experiences
-    </p>
-    <ParticlesBackground client:load />
+    <ParticlesBackground client:only />
   </section>
 </Layout>

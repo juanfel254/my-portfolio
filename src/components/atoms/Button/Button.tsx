@@ -11,9 +11,9 @@ const buttonStyles = cva('px-4 py-1 rounded-3xl w-fit group', {
   variants: {
     variant: {
       primary:
-        'bg-neutral-0 text-neutral-950 transition-all duration-500 hover:bg-primary-500 hover:text-neutral-0',
+        'bg-neutral-0 text-neutral-0 transition-all duration-500 bg-primary-400 hover:bg-primary-500 ',
       ghost:
-        'bg-transparent opacity-60 hover:opacity-100 transition-all duration-400'
+        'bg-transparent opacity-70 hover:opacity-100  transition-all duration-400'
     },
     size: {
       small: 'text-sm',

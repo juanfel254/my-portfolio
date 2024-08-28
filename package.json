@@ -3,7 +3,7 @@
   "type": "module",
   "author": "Juan Felipe Parra Runceria",
   "description": "My personal portfolio as a software engineer and web developer",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

@@ -39,9 +39,9 @@ const ParticlesBackground: React.FC = () => {
       constructor() {
         this.x = Math.random() * (canvas?.width || 0);
         this.y = Math.random() * (canvas?.height || 0);
-        this.size = Math.random() * 3 + 1;
-        this.speedX = Math.random() * -5 - 1;
-        this.speedY = Math.random() * -6 - 1;
+        this.size = Math.random() * 10 + 1;
+        this.speedX = Math.random() * 1 - 1;
+        this.speedY = Math.random() * 1 - 1;
 
       }
 
@@ -55,7 +55,7 @@ const ParticlesBackground: React.FC = () => {
       draw(ctx: CanvasRenderingContext2D) {
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = 'black';
         ctx.fill();
       }
     }
@@ -92,7 +92,7 @@ const ParticlesBackground: React.FC = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full bg-black -z-10" />;
+  return <canvas ref={canvasRef} className="absolute top-0 left-0 w-full h-full bg-transparent -z-10" />;
 };
 
 export default ParticlesBackground;
